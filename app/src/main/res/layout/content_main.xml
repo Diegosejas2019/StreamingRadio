@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagenfondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewRadioUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Url"
+        android:layout_marginBottom="99dp" />
+
+<!--    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@null"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:src="@drawable/play40" />
+<!--    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+        android:indeterminateOnly="false"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:layout_marginBottom="128dp"
+        android:layout_above="@+id/buttonPlay" />-->
+
+<!--    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignBaseline="@+id/buttonPlay"
+        android:layout_alignBottom="@+id/buttonPlay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        app:srcCompat="@drawable/imagencentro" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="237dp"
+        android:layout_height="32dp"
+        android:progressBackgroundTint="@android:color/white"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_volumen" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_toEndOf="@+id/seekBar"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_volumen_full" />
+</RelativeLayout>
